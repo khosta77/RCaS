@@ -1,0 +1,67 @@
+\documentclass[a4paper, 17pt]{report}
+
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc} 
+\usepackage [english, russian]{babel} 
+
+% \documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {images/ } }
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\usepackage{tikz,filecontents,amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{width=11cm,compat=1.18}
+
+
+\begin{document}
+\textbf{ \textsc{Параграф 5 Задача 2}}
+
+\textbf{Дано:}
+
+$\theta = 20 \cdot 10^{-6} $ [c]
+
+$U_0 = 15 $ [В]
+
+\textbf{Решение:}
+
+\centerline{
+ $ S(t)=\frac{S_0 \cdot \omega_0}{\pi} \cdot \frac{\text{sin} \omega_0 \cdot t }{\omega_0 \cdot t} $
+}
+, где \Large $\frac{\text{sin} \omega_0 \cdot t }{\omega_0 \cdot t} = 1$ , из этого следует, что $\text{t} = \pm \frac{\pi}{\omega_0}$ , тогда
+
+\centerline{  \Large $\text{t}_1 = \pm \frac{\pi}{\omega_0}$ и $\text{t}_2 = \frac{-\pi}{\omega_0}$.} 
+И
+
+\centerline{ \Large  $U_0 = \frac{S_0 \cdot \omega_0}{\pi}$.}
+
+1) Из графика видно, что:
+
+\centerline{
+	\Large $\frac{\pi}{\omega_0}=\frac{\theta}{2} \Rightarrow \omega_0 = \frac{2\cdot\pi}{\theta} = \frac{2\cdot\pi}{20 \cdot 10^{-6}} = 0,314 \cdot 10^6 \text{ [с}^{-1}\text{]}$
+}
+, тогда ширина полосы частот:
+
+\centerline{
+	\Large $\triangle\omega = \omega_0 \cdot 2 = 0,314 \cdot 10^6 \cdot 2 = 0,628 \cdot 10^6 \text{ [с}^{-1}\text{]}$
+}
+
+2) Вычислим $S_0$:
+
+\centerline{
+	\Large $U_0 = \frac{S_0 \cdot \omega_0}{\pi} \Rightarrow$
+}
+	
+\centerline{
+	\Large $S_0 = \frac{U_0 \cdot \pi}{\omega_0} = \frac{15 \cdot \pi}{0,314 \cdot 10^6} = 15 \cdot 10^{-5} \text{[Дж].}$
+}
+
+
+
+
+
+\end{document}
